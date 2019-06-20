@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".demodrag.DragActivity"/>
         <activity android:name=".demochannel.ChannelActivity"/>
+        <activity android:name=".adddelete.AddActivity" />
     </application>
 
 </manifest>

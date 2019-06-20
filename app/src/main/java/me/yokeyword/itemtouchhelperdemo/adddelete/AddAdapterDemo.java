@@ -8,10 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.ryan.itemtouch.R;
 
 import java.util.Collections;
 import java.util.List;
+
+import me.yokeyword.itemtouchhelperdemo.R;
 
 public class AddAdapterDemo extends RecyclerView.Adapter<AddAdapterDemo.DragViewHolder> implements IOperationData {
     private Context context;

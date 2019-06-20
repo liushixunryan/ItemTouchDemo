@@ -6,10 +6,11 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 
-import com.example.ryan.itemtouch.R;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import me.yokeyword.itemtouchhelperdemo.R;
 
 public class AddActivity extends AppCompatActivity {
     private RecyclerView addrv;

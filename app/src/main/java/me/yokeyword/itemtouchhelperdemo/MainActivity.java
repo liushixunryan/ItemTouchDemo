@@ -20,8 +20,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button mBtnDrag = (Button) findViewById(R.id.btn_drag);
         Button mBtnChannel = (Button) findViewById(R.id.btn_channl);
+
         mBtnDrag.setOnClickListener(this);
         mBtnChannel.setOnClickListener(this);
+
+
     }
 
     @Override
@@ -30,11 +33,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_drag:
                 startActivity(new Intent(MainActivity.this, DragActivity.class));
                 break;
-            case R.id.add:
-                startActivity(new Intent(MainActivity.this, AddActivity.class));
             case R.id.btn_channl:
                 startActivity(new Intent(MainActivity.this, ChannelActivity.class));
                 break;
         }
+    }
+
+    public void zengshan(View view) {
+        Intent intent=new Intent(this,AddActivity.class);
+        startActivity(intent);
     }
 }

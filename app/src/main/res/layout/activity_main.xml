@@ -19,6 +19,7 @@
             android:layout_height="56dp"/>
 
         <Button
+            android:onClick="zengshan"
             android:id="@+id/add"
             android:layout_marginTop="32dp"
             android:layout_width="match_parent"
