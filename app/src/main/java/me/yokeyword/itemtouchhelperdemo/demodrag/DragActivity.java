@@ -29,11 +29,11 @@ public class DragActivity extends AppCompatActivity {
 
     private void init() {
         final List<String> items = new ArrayList<>();
-        for (int i = 0; i < 18; i++) {
-            items.add("Index " + i);
+        for (int i = 0; i < 10; i++) {
+            items.add("哦吼 " + i);
         }
 
-        GridLayoutManager manager = new GridLayoutManager(this, 2);
+        GridLayoutManager manager = new GridLayoutManager(this, 3);
         mRecy.setLayoutManager(manager);
 
         ItemDragHelperCallback callback = new ItemDragHelperCallback(){

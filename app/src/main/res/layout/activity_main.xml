@@ -19,6 +19,13 @@
             android:layout_height="56dp"/>
 
         <Button
+            android:id="@+id/add"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:text="增删拖拽"
+            android:layout_height="56dp"/>
+
+        <Button
 
             android:id="@+id/btn_channl"
             android:layout_width="match_parent"

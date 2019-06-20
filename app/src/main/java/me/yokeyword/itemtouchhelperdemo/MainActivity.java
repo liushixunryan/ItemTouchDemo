@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import me.yokeyword.itemtouchhelperdemo.adddelete.AddActivity;
 import me.yokeyword.itemtouchhelperdemo.demochannel.ChannelActivity;
 import me.yokeyword.itemtouchhelperdemo.demodrag.DragActivity;
 
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_drag:
                 startActivity(new Intent(MainActivity.this, DragActivity.class));
                 break;
+            case R.id.add:
+                startActivity(new Intent(MainActivity.this, AddActivity.class));
             case R.id.btn_channl:
                 startActivity(new Intent(MainActivity.this, ChannelActivity.class));
                 break;
