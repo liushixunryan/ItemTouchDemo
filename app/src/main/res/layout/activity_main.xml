@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent">
 
-   <Button
-       android:id="@+id/btn_drag"
-       android:layout_marginTop="32dp"
-       android:layout_width="match_parent"
-       android:text="简单拖拽Demo"
-       android:layout_height="56dp"/>
-
-    <Button
-        android:id="@+id/btn_channl"
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:text="排序增删Demo"
-        android:layout_marginTop="16dp"
-        android:layout_height="56dp"/>
-</LinearLayout>
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_drag"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:text="简单拖拽"
+            android:layout_height="56dp"/>
+
+        <Button
+
+            android:id="@+id/btn_channl"
+            android:layout_width="match_parent"
+            android:text="排序增删"
+            android:layout_marginTop="25dp"
+            android:layout_height="56dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -2,7 +2,6 @@ package me.yokeyword.itemtouchhelperdemo.demochannel;
 
 /**
  * 频道实体类
- * Created by YoKeyword on 15/12/29.
  */
 public class ChannelEntity {
 

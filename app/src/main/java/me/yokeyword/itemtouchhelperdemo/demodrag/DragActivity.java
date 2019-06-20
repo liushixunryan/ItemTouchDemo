@@ -14,7 +14,6 @@ import me.yokeyword.itemtouchhelperdemo.helper.ItemDragHelperCallback;
 
 /**
  * 拖拽
- * Created by YoKeyword on 16/1/4.
  */
 public class DragActivity extends AppCompatActivity {
     private RecyclerView mRecy;

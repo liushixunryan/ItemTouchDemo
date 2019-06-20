@@ -16,7 +16,6 @@ import me.yokeyword.itemtouchhelperdemo.helper.OnItemMoveListener;
 
 /**
  * 仅拖拽排序
- * Created by YoKeyword on 16/1/4.
  */
 public class DragAdapter extends RecyclerView.Adapter<DragAdapter.DragViewHolder> implements OnItemMoveListener {
     private List<String> mItems;

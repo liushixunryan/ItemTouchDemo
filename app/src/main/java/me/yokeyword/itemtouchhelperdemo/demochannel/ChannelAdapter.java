@@ -25,7 +25,6 @@ import me.yokeyword.itemtouchhelperdemo.helper.OnItemMoveListener;
 
 /**
  * 拖拽排序 + 增删
- * Created by YoKeyword on 15/12/28.
  */
 public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements OnItemMoveListener {
     // 我的频道 标题部分
@@ -359,8 +358,6 @@ public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     /**
      * 其他频道 移动到 我的频道
-     *
-     * @param otherHolder
      */
     private void moveOtherToMy(OtherViewHolder otherHolder) {
         int position = processItemRemoveAdd(otherHolder);
@@ -372,8 +369,6 @@ public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     /**
      * 其他频道 移动到 我的频道 伴随延迟
-     *
-     * @param otherHolder
      */
     private void moveOtherToMyWithDelay(OtherViewHolder otherHolder) {
         final int position = processItemRemoveAdd(otherHolder);
@@ -441,8 +436,6 @@ public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     /**
      * 开启编辑模式
-     *
-     * @param parent
      */
     private void startEditMode(RecyclerView parent) {
         isEditMode = true;
@@ -459,8 +452,6 @@ public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     /**
      * 完成编辑模式
-     *
-     * @param parent
      */
     private void cancelEditMode(RecyclerView parent) {
         isEditMode = false;

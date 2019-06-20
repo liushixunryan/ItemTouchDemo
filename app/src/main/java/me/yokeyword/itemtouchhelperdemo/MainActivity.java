@@ -10,9 +10,6 @@ import android.widget.Button;
 import me.yokeyword.itemtouchhelperdemo.demochannel.ChannelActivity;
 import me.yokeyword.itemtouchhelperdemo.demodrag.DragActivity;
 
-/**
- * Created by YoKeyword on 16/1/4.
- */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override

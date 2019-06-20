@@ -2,7 +2,6 @@ package me.yokeyword.itemtouchhelperdemo.helper;
 
 /**
  * ViewHolder 被选中 以及 拖拽释放 触发监听器
- * Created by YoKeyword on 15/12/29.
  */
 public interface OnDragVHListener {
     /**
