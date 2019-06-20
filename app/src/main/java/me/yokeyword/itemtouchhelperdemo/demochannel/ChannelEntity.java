@@ -1,7 +1,7 @@
 package me.yokeyword.itemtouchhelperdemo.demochannel;
 
-/**
- * 频道实体类
+/*
+ * 频道类
  */
 public class ChannelEntity {
 

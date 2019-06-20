@@ -14,7 +14,7 @@ import me.yokeyword.itemtouchhelperdemo.R;
 import me.yokeyword.itemtouchhelperdemo.helper.OnDragVHListener;
 import me.yokeyword.itemtouchhelperdemo.helper.OnItemMoveListener;
 
-/**
+/*
  * 仅拖拽排序
  */
 public class DragAdapter extends RecyclerView.Adapter<DragAdapter.DragViewHolder> implements OnItemMoveListener {

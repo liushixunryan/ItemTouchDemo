@@ -12,7 +12,7 @@ import java.util.List;
 import me.yokeyword.itemtouchhelperdemo.R;
 import me.yokeyword.itemtouchhelperdemo.helper.ItemDragHelperCallback;
 
-/**
+/*
  * 拖拽
  */
 public class DragActivity extends AppCompatActivity {

@@ -5,9 +5,6 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.helper.ItemTouchHelper;
 
-/**
- * ItemDragHelperCallback
- */
 public class ItemDragHelperCallback extends ItemTouchHelper.Callback {
 
     @Override

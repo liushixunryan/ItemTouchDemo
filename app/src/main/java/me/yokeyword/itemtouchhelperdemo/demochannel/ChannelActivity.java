@@ -14,7 +14,7 @@ import java.util.List;
 import me.yokeyword.itemtouchhelperdemo.R;
 import me.yokeyword.itemtouchhelperdemo.helper.ItemDragHelperCallback;
 
-/**
+/*
  * 频道 增删改查 排序
  */
 public class ChannelActivity extends AppCompatActivity {

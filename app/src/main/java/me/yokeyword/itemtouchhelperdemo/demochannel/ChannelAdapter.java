@@ -23,7 +23,7 @@ import me.yokeyword.itemtouchhelperdemo.R;
 import me.yokeyword.itemtouchhelperdemo.helper.OnDragVHListener;
 import me.yokeyword.itemtouchhelperdemo.helper.OnItemMoveListener;
 
-/**
+/*
  * 拖拽排序 + 增删
  */
 public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements OnItemMoveListener {
@@ -305,9 +305,7 @@ public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         return mMyChannelItems.size() + mOtherChannelItems.size() + COUNT_PRE_OTHER_HEADER;
     }
 
-    /**
-     * 开始增删动画
-     */
+    // 开始增删动画
     private void startAnimation(RecyclerView recyclerView, final View currentView, float targetX, float targetY) {
         final ViewGroup viewGroup = (ViewGroup) recyclerView.getParent();
         final ImageView mirrorView = addMirrorView(viewGroup, recyclerView, currentView);
@@ -337,11 +335,7 @@ public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         });
     }
 
-    /**
-     * 我的频道 移动到 其他频道
-     *
-     * @param myHolder
-     */
+    //我的频道 移动到 其他频道
     private void moveMyToOther(MyViewHolder myHolder) {
         int position = myHolder.getAdapterPosition();
 
@@ -356,9 +350,7 @@ public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         notifyItemMoved(position, mMyChannelItems.size() + COUNT_PRE_OTHER_HEADER);
     }
 
-    /**
-     * 其他频道 移动到 我的频道
-     */
+    //其他频道 移动到 我的频道
     private void moveOtherToMy(OtherViewHolder otherHolder) {
         int position = processItemRemoveAdd(otherHolder);
         if (position == -1) {
@@ -367,9 +359,7 @@ public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         notifyItemMoved(position, mMyChannelItems.size() - 1 + COUNT_PRE_MY_HEADER);
     }
 
-    /**
-     * 其他频道 移动到 我的频道 伴随延迟
-     */
+    //其他频道 移动到 我的频道 伴随延迟
     private void moveOtherToMyWithDelay(OtherViewHolder otherHolder) {
         final int position = processItemRemoveAdd(otherHolder);
         if (position == -1) {
@@ -399,16 +389,7 @@ public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     }
 
 
-    /**
-     * 添加需要移动的 镜像View
-     */
     private ImageView addMirrorView(ViewGroup parent, RecyclerView recyclerView, View view) {
-        /**
-         * 我们要获取cache首先要通过setDrawingCacheEnable方法开启cache，然后再调用getDrawingCache方法就可以获得view的cache图片了。
-         buildDrawingCache方法可以不用调用，因为调用getDrawingCache方法时，若果cache没有建立，系统会自动调用buildDrawingCache方法生成cache。
-         若想更新cache, 必须要调用destoryDrawingCache方法把旧的cache销毁，才能建立新的。
-         当调用setDrawingCacheEnabled方法设置为false, 系统也会自动把原来的cache销毁。
-         */
         view.destroyDrawingCache();
         view.setDrawingCacheEnabled(true);
         final ImageView mirrorView = new ImageView(recyclerView.getContext());
@@ -434,9 +415,7 @@ public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         notifyItemMoved(fromPosition, toPosition);
     }
 
-    /**
-     * 开启编辑模式
-     */
+    //开启编辑模式
     private void startEditMode(RecyclerView parent) {
         isEditMode = true;
 
@@ -450,9 +429,7 @@ public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         }
     }
 
-    /**
-     * 完成编辑模式
-     */
+    // 完成编辑模式
     private void cancelEditMode(RecyclerView parent) {
         isEditMode = false;
 
@@ -466,9 +443,7 @@ public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         }
     }
 
-    /**
-     * 获取位移动画
-     */
+    //获取位移动画
     private TranslateAnimation getTranslateAnimator(float targetX, float targetY) {
         TranslateAnimation translateAnimation = new TranslateAnimation(
                 Animation.RELATIVE_TO_SELF, 0f,
@@ -489,9 +464,7 @@ public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         this.mChannelItemClickListener = listener;
     }
 
-    /**
-     * 我的频道
-     */
+    // 我的频道
     class MyViewHolder extends RecyclerView.ViewHolder implements OnDragVHListener {
         private TextView textView;
         private ImageView imgEdit;
@@ -502,26 +475,20 @@ public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             imgEdit = (ImageView) itemView.findViewById(R.id.img_edit);
         }
 
-        /**
-         * item 被选中时
-         */
+        //item 被选中时
         @Override
         public void onItemSelected() {
             textView.setBackgroundResource(R.drawable.bg_channel_p);
         }
 
-        /**
-         * item 取消选中时
-         */
+        //item 取消选中时
         @Override
         public void onItemFinish() {
             textView.setBackgroundResource(R.drawable.bg_channel);
         }
     }
 
-    /**
-     * 其他频道
-     */
+    //其他频道
     class OtherViewHolder extends RecyclerView.ViewHolder {
         private TextView textView;
 
@@ -531,9 +498,7 @@ public class ChannelAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         }
     }
 
-    /**
-     * 我的频道  标题部分
-     */
+    //我的频道  标题部分
     class MyChannelHeaderViewHolder extends RecyclerView.ViewHolder {
         private TextView tvBtnEdit;
 
